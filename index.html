@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Project Detail — Faraj Muafa</title>
+<title>Faraj Muafa — Web Developer</title>
+<meta name="description" content="Faraj Muafa Dhamir — Frontend Developer & mahasiswa Sistem Informasi di Indonesia. Portfolio, proyek, dan skill.">
 <link rel="stylesheet" href="css/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,11 +19,11 @@
 
       <nav class="nav-list" id="navList">
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li class="active" data-section="home"><a href="#home">Home</a></li>
           <li><a href="about.html">About</a></li>
-          <li class="active"><a href="projects.html">Projects</a></li>
+          <li><a href="projects.html">Projects</a></li>
           <li><a href="experience.html">Experience</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
@@ -39,428 +40,360 @@
 
   <main>
 
-    <!-- ============================================================
-         PRJ.01 — E-COMMERCE
-         ============================================================ -->
-    <article class="project-detail-block" id="detail-ecommerce">
-      <div class="detail-hero">
-        <a href="projects.html" class="breadcrumb"><i class="fa-solid fa-arrow-left"></i> Back to all projects</a>
-        <h1>Website E-Commerce</h1>
-        <p class="detail-summary">Toko online modern dengan filter produk, keranjang belanja, dan sistem pembayaran.</p>
-      </div>
+    <!-- HOME / HERO -->
+    <section class="home" id="home">
+      <div class="home-container">
+        <div class="home-copy reveal">
+          <p class="eyebrow"><span class="dot"></span> Available for Freelance & Internship</p>
+          <h1>Hi, I'm <span class="highlight name-mark">Faraj Muafa</span></h1>
+          <h2 class="role-line">I build <span class="typing" id="typing"></span></h2>
 
-      <div class="detail-gallery">
-        <div class="detail-gallery-item"><img src="images/ecommerceweb.jpg" alt="Website E-Commerce - tampilan 1" data-lightbox></div>
-      </div>
+          <p class="home-desc">
+            Mahasiswa Sistem Informasi di Universitas Singaperbangsa Karawang, sedang menempuh semester 4.
+            Saya merancang dan membangun website yang responsif dan berfokus pada pengguna dan di luar
+            layar, saya trading di pasar finansial, yang melatih saya berpikir analitis, disiplin, dan terstruktur.
+          </p>
 
-      <div class="detail-body">
-        <div class="detail-main">
-          <h2>Overview</h2>
-          <p>Website e-commerce ini dibangun untuk mensimulasikan pengalaman belanja online yang lengkap, mulai dari katalog produk, filter berdasarkan kategori dan harga, hingga proses checkout. Backend menggunakan PHP dengan database MySQL melalui Laragon sebagai environment lokal.</p>
-
-          <h2>My Role</h2>
-          <p>Full-stack merancang UI, struktur database, dan alur checkout.</p>
-
-          <h2>Challenges</h2>
-          <ul class="detail-list">
-            <li><i class="fa-solid fa-circle-check"></i> Mengelola state keranjang belanja tanpa framework JS modern.</li>
-            <li><i class="fa-solid fa-circle-check"></i> Menyusun struktur database relasional untuk produk, kategori, dan transaksi.</li>
-            <li><i class="fa-solid fa-circle-check"></i> Mengintegrasikan API pembayaran sederhana.</li>
-          </ul>
-        </div>
-
-        <aside class="detail-side">
-          <h3>Tech Stack</h3>
-          <div class="skills">
-            <span>HTML</span><span>CSS</span><span>PHP</span><span>Laragon</span><span>API</span>
+          <div class="meta-row">
+            <span><i class="fa-solid fa-location-dot"></i> Bekasi, Indonesia</span>
+            <span><i class="fa-solid fa-graduation-cap"></i> Sistem Informasi · Sem. 5</span>
           </div>
-          <div class="detail-unavailable">Live demo belum tersedia</div>
-        </aside>
-      </div>
 
-      <div class="detail-nav">
-        <div class="btn-row">
-          <a href="project-detail.html?id=registration" class="btn btn-outline detail-nav-link">
-            <i class="fa-solid fa-arrow-left"></i> Website Form Registrasi
-          </a>
-          <a href="project-detail.html?id=portfolio" class="btn btn-outline detail-nav-link">
-            Website Portofolio <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    </article>
-
-    <!-- ============================================================
-         PRJ.02 — PORTFOLIO
-         ============================================================ -->
-    <article class="project-detail-block" id="detail-portfolio">
-      <div class="detail-hero">
-        <a href="projects.html" class="breadcrumb"><i class="fa-solid fa-arrow-left"></i> Back to all projects</a>
-        <h1>Website Portofolio</h1>
-        <p class="detail-summary">Portofolio pribadi untuk menampilkan hasil desain dan proyek koding.</p>
-      </div>
-
-      <div class="detail-gallery">
-        <div class="detail-gallery-item"><img src="images/webportfolio.jpg" alt="Website Portofolio - tampilan 1" data-lightbox></div>
-        <div class="detail-gallery-item"><img src="images/webportfolio-2.jpg" alt="Website Portofolio - tampilan 2" data-lightbox></div>
-      </div>
-
-      <div class="detail-body">
-        <div class="detail-main">
-          <h2>Overview</h2>
-          <p>Website portofolio yang dibangun untuk merangkum pengalaman, proyek, dan skill secara ringkas dan profesional. Fokus pada tampilan yang bersih, responsif, dan mudah dinavigasi.</p>
-
-          <h2>My Role</h2>
-          <p>Solo desain UI, layout responsif, dan animasi interaksi.</p>
-
-          <h2>Challenges</h2>
-          <ul class="detail-list">
-            <li><i class="fa-solid fa-circle-check"></i> Menyusun grid layout yang konsisten di berbagai ukuran layar.</li>
-            <li><i class="fa-solid fa-circle-check"></i> Membuat animasi scroll-reveal yang ringan dan halus.</li>
-          </ul>
-        </div>
-
-        <aside class="detail-side">
-          <h3>Tech Stack</h3>
-          <div class="skills">
-            <span>HTML</span><span>CSS</span><span>Bootstrap</span><span>JavaScript</span>
+          <div class="btn-row">
+            <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i> Contact Me</a>
+            <a href="#" class="btn btn-outline" download><i class="fa-solid fa-download"></i> Download CV</a>
           </div>
-          <div class="detail-unavailable">Live demo belum tersedia</div>
-        </aside>
-      </div>
 
-      <div class="detail-nav">
-        <div class="btn-row">
-          <a href="project-detail.html?id=ecommerce" class="btn btn-outline detail-nav-link">
-            <i class="fa-solid fa-arrow-left"></i> Website E-Commerce
-          </a>
-          <a href="project-detail.html?id=workprogram" class="btn btn-outline detail-nav-link">
-            Website Program Kerja Organisasi <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    </article>
-
-    <!-- ============================================================
-         PRJ.03 — WORK PROGRAM WEBSITE
-         ============================================================ -->
-    <article class="project-detail-block" id="detail-workprogram">
-      <div class="detail-hero">
-        <a href="projects.html" class="breadcrumb"><i class="fa-solid fa-arrow-left"></i> Back to all projects</a>
-        <h1>Website Program Kerja Organisasi (AAS)</h1>
-        <p class="detail-summary">Website untuk menampilkan program kerja organisasi secara real-time.</p>
-      </div>
-
-      <div class="detail-gallery">
-        <div class="detail-gallery-item"><img src="images/webaas.jpg" alt="Website Program Kerja Organisasi - tampilan 1" data-lightbox></div>
-      </div>
-
-      <div class="detail-body">
-        <div class="detail-main">
-          <h2>Overview</h2>
-          <p>Dibangun untuk himpunan Mahasiswa Sistem Informasi(HIMSIKA) guna mendokumentasikan dan menampilkan seluruh program kerja divisi secara terstruktur dan mudah diakses publik.</p>
-
-          <h2>My Role</h2>
-          <p>Frontend developer.</p>
-
-          <h2>Challenges</h2>
-          <ul class="detail-list">
-            <li><i class="fa-solid fa-circle-check"></i> Menyesuaikan struktur konten dengan kebutuhan banyak Agenda.</li>
-            <li><i class="fa-solid fa-circle-check"></i> Memastikan tampilan tetap rapi meski konten terus bertambah.</li>
-          </ul>
-        </div>
-
-        <aside class="detail-side">
-          <h3>Tech Stack</h3>
-          <div class="skills">
-            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          <div class="social-row">
+            <span class="social-label">Find me on</span>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/farajmuafaa/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
           </div>
-          <a href="https://himsika.unsika.ac.id/en/aashimsika/" target="_blank" rel="noopener" class="btn btn-primary detail-demo-btn">
-            <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
-          </a>
-        </aside>
-      </div>
-
-      <div class="detail-nav">
-        <div class="btn-row">
-          <a href="project-detail.html?id=portfolio" class="btn btn-outline detail-nav-link">
-            <i class="fa-solid fa-arrow-left"></i> Website Portofolio
-          </a>
-          <a href="project-detail.html?id=agrisure" class="btn btn-outline detail-nav-link">
-            Prototipe Agrisure <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    </article>
-
-    <!-- ============================================================
-         PRJ.04 — AGRISURE
-         ============================================================ -->
-    <article class="project-detail-block" id="detail-agrisure">
-      <div class="detail-hero">
-        <a href="projects.html" class="breadcrumb"><i class="fa-solid fa-arrow-left"></i> Back to all projects</a>
-        <h1>Prototipe Agrisure — Tim</h1>
-        <p class="detail-summary">Landing page asuransi pertanian dengan fitur berbasis IoT.</p>
-      </div>
-
-      <div class="detail-gallery">
-        <div class="detail-gallery-item"><img src="images/agrisure.jpg" alt="Prototipe Agrisure - tampilan 1" data-lightbox></div>
-      </div>
-
-      <div class="detail-body">
-        <div class="detail-main">
-          <h2>Overview</h2>
-          <p>Proyek desain tim untuk konsep produk asuransi pertanian yang memanfaatkan data sensor IoT untuk menilai risiko gagal panen secara otomatis.</p>
-
-          <h2>My Role</h2>
-          <p>UI/UX designer wireframe, mockup, dan prototyping di Figma.</p>
-
-          <h2>Challenges</h2>
-          <ul class="detail-list">
-            <li><i class="fa-solid fa-circle-check"></i> Menerjemahkan data teknis IoT menjadi visual yang mudah dipahami petani.</li>
-            <li><i class="fa-solid fa-circle-check"></i> Menjaga konsistensi desain antar anggota tim.</li>
-          </ul>
         </div>
 
-        <aside class="detail-side">
-          <h3>Tech Stack</h3>
-          <div class="skills">
-            <span>Figma</span>
+        <div class="home-visual reveal">
+          <div class="code-visual">
+            <div class="code-topbar">
+              <span class="code-dot"></span><span class="code-dot"></span><span class="code-dot"></span>
+              <span class="code-filename">faraj-muafa.js</span>
+            </div>
+            <pre><code><span class="tok-key">const</span> <span class="tok-fn">developer</span> = {
+  <span class="tok-punc">name:</span> <span class="tok-str">"Faraj Muafa Dhamir"</span>,
+  <span class="tok-punc">role:</span> <span class="tok-str">"Frontend Developer"</span>,
+  <span class="tok-punc">study:</span> <span class="tok-str">"Sistem Informasi"</span>,
+  <span class="tok-punc">semester:</span> <span class="tok-num">5</span>,
+  <span class="tok-punc">location:</span> <span class="tok-str">"Bekasi, Indonesia"</span>,
+  <span class="tok-punc">stack:</span> [<span class="tok-str">"HTML"</span>, <span class="tok-str">"CSS"</span>, <span class="tok-str">"JS"</span>, <span class="tok-str">"PHP"</span>],
+  <span class="tok-punc">projects:</span> <span class="tok-num">7</span>,
+  <span class="tok-punc">available:</span> <span class="tok-key">true</span>,
+
+  <span class="tok-com">// disiplin yang terbawa dari trading</span>
+  <span class="tok-fn">approach</span>() {
+    <span class="tok-key">return</span> <span class="tok-str">"analitis, terstruktur, tenang."</span>;
+  }
+};</code></pre>
           </div>
-          <div class="detail-unavailable">Live demo belum tersedia</div>
-        </aside>
-      </div>
-
-      <div class="detail-nav">
-        <div class="btn-row">
-          <a href="project-detail.html?id=workprogram" class="btn btn-outline detail-nav-link">
-            <i class="fa-solid fa-arrow-left"></i> Website Program Kerja Organisasi
-          </a>
-          <a href="project-detail.html?id=keepzone" class="btn btn-outline detail-nav-link">
-            Keep Zone Business <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    </article>
-
-    <!-- ============================================================
-         PRJ.05 — KEEP ZONE
-         ============================================================ -->
-    <article class="project-detail-block" id="detail-keepzone">
-      <div class="detail-hero">
-        <a href="projects.html" class="breadcrumb"><i class="fa-solid fa-arrow-left"></i> Back to all projects</a>
-        <h1>Keep Zone Business — Tim</h1>
-        <p class="detail-summary">Platform online untuk membantu pelanggan mengelola barang dagangan.</p>
-      </div>
-
-      <div class="detail-gallery">
-        <div class="detail-gallery-item"><img src="images/keepzone.jpg" alt="Keep Zone Business - tampilan 1" data-lightbox></div>
-      </div>
-
-      <div class="detail-body">
-        <div class="detail-main">
-          <h2>Overview</h2>
-          <p>Platform yang dirancang untuk membantu pemilik bisnis kecil mengelola stok dan katalog barang dagangan mereka secara digital.</p>
-
-          <h2>My Role</h2>
-          <p>Frontend developer & desainer UI dalam tim kecil.</p>
-
-          <h2>Challenges</h2>
-          <ul class="detail-list">
-            <li><i class="fa-solid fa-circle-check"></i> Merancang alur manajemen barang yang sederhana untuk pengguna non-teknis.</li>
-            <li><i class="fa-solid fa-circle-check"></i> Menyesuaikan desain Figma menjadi kode HTML/CSS yang presisi.</li>
-          </ul>
-        </div>
-
-        <aside class="detail-side">
-          <h3>Tech Stack</h3>
-          <div class="skills">
-            <span>HTML</span><span>CSS</span><span>Figma</span>
+          <div class="ticker" aria-hidden="true">
+            <div class="ticker-track">
+              <span>FRONTEND&nbsp;DEV</span><span>·</span>
+              <span>SI&nbsp;—&nbsp;SEM.&nbsp;4</span><span>·</span>
+              <span>KARAWANG,&nbsp;ID</span><span>·</span>
+              <span>7+&nbsp;PROJECTS</span><span>·</span>
+              <span>FRONTEND&nbsp;DEV</span><span>·</span>
+              <span>SI&nbsp;—&nbsp;SEM.&nbsp;4</span><span>·</span>
+              <span>KARAWANG,&nbsp;ID</span><span>·</span>
+              <span>7+&nbsp;PROJECTS</span><span>·</span>
+            </div>
           </div>
-          <div class="detail-unavailable">Live demo belum tersedia</div>
-        </aside>
-      </div>
-
-      <div class="detail-nav">
-        <div class="btn-row">
-          <a href="project-detail.html?id=agrisure" class="btn btn-outline detail-nav-link">
-            <i class="fa-solid fa-arrow-left"></i> Prototype Agrisure
-          </a>
-          <a href="project-detail.html?id=absensi" class="btn btn-outline detail-nav-link">
-            Website Absensi <i class="fa-solid fa-arrow-right"></i>
-          </a>
         </div>
       </div>
-    </article>
+      <a href="#about" class="scroll-cue" aria-label="Scroll ke bawah"><i class="fa-solid fa-chevron-down"></i></a>
+    </section>
 
-    <!-- ============================================================
-         PRJ.06 — ABSENSI
-         ============================================================ -->
-    <article class="project-detail-block" id="detail-absensi">
-      <div class="detail-hero">
-        <a href="projects.html" class="breadcrumb"><i class="fa-solid fa-arrow-left"></i> Back to all projects</a>
-        <h1>Website Absensi</h1>
-        <p class="detail-summary">Website untuk mengisi daftar hadir yang terhubung ke database phpMyAdmin.</p>
+    <div class="section-divider"></div>
+
+    <!-- ABOUT SUMMARY -->
+    <section class="about" id="about">
+      <div class="section-head reveal">
+        <p class="eyebrow-label">About Me</p>
+        <h2>Quick Summary</h2>
       </div>
 
-      <div class="detail-gallery">
-        <div class="detail-gallery-item"><img src="images/absensiweb.jpg" alt="Website Absensi - tampilan 1" data-lightbox></div>
-        <div class="detail-gallery-item"><img src="images/absensiweb-2.jpg" alt="Website Absensi - tampilan 2" data-lightbox></div>
-        <div class="detail-gallery-item"><img src="images/absensiweb-3.jpg" alt="Website Absensi - tampilan 3" data-lightbox></div>
-      </div>
+      <div class="about-container reveal">
+        <div class="about-copy">
+          <p>
+            Saya seorang mahasiswa dan web developer yang fokus membangun website modern, responsif, dan
+            ramah pengguna dengan HTML, CSS, JavaScript, serta framework modern.
+          </p>
 
-      <div class="detail-body">
-        <div class="detail-main">
-          <h2>Overview</h2>
-          <p>Sistem absensi berbasis web sederhana yang mencatat kehadiran pengguna dan menyimpannya langsung ke database melalui phpMyAdmin.</p>
-
-          <h2>My Role</h2>
-          <p>Full-stack - form input, validasi, dan koneksi database.</p>
-
-          <h2>Challenges</h2>
-          <ul class="detail-list">
-            <li><i class="fa-solid fa-circle-check"></i> Mencegah entri absensi ganda dalam satu hari.</li>
-            <li><i class="fa-solid fa-circle-check"></i> Menyusun query database yang efisien untuk laporan kehadiran.</li>
-          </ul>
-        </div>
-
-        <aside class="detail-side">
-          <h3>Tech Stack</h3>
-          <div class="skills">
-            <span>HTML</span><span>CSS</span><span>JS</span><span>PHP</span>
+          <div class="stat-strip">
+            <div class="stat">
+              <span class="stat-num">7+</span>
+              <span class="stat-label">Proyek dikerjakan</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">4</span>
+              <span class="stat-label">Bahasa & stack</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">2</span>
+              <span class="stat-label">Web dev & trading</span>
+            </div>
           </div>
-          <div class="detail-unavailable">Live demo belum tersedia</div>
-        </aside>
-      </div>
 
-      <div class="detail-nav">
-        <div class="btn-row">
-          <a href="project-detail.html?id=keepzone" class="btn btn-outline detail-nav-link">
-            <i class="fa-solid fa-arrow-left"></i> Keep Zone Business
-          </a>
-          <a href="project-detail.html?id=registration" class="btn btn-outline detail-nav-link">
-            Website Form Registrasi <i class="fa-solid fa-arrow-right"></i>
+          <a href="about.html" class="section-more">
+            Selengkapnya tentang saya <i class="fa-solid fa-arrow-right"></i>
           </a>
         </div>
-      </div>
-    </article>
 
-    <!-- ============================================================
-         PRJ.07 — REGISTRATION FORM
-         ============================================================ -->
-    <article class="project-detail-block" id="detail-registration">
-      <div class="detail-hero">
-        <a href="projects.html" class="breadcrumb"><i class="fa-solid fa-arrow-left"></i> Back to all projects</a>
-        <h1>Website Form Registrasi</h1>
-        <p class="detail-summary">Form registrasi perusahaan sederhana dengan data yang bisa terhubung ke spreadsheet atau Microsoft Teams.</p>
-      </div>
-
-      <div class="detail-gallery">
-        <div class="detail-gallery-item"><img src="images/regis.jpg" alt="Website Form Registrasi - tampilan 1" data-lightbox></div>
-        <div class="detail-gallery-item"><img src="images/daftartlc.jpg" alt="Website Form Registrasi - tampilan 2" data-lightbox></div>
-      </div>
-
-      <div class="detail-body">
-        <div class="detail-main">
-          <h2>Overview</h2>
-          <p>Formulir registrasi berbasis web yang dirancang agar mudah diintegrasikan dengan Google Sheets atau Microsoft Teams untuk pencatatan otomatis.</p>
-
-          <h2>My Role</h2>
-          <p>Frontend developer - validasi form dan integrasi data.</p>
-
-          <h2>Challenges</h2>
-          <ul class="detail-list">
-            <li><i class="fa-solid fa-circle-check"></i> Validasi input di sisi klien sebelum data dikirim.</li>
-            <li><i class="fa-solid fa-circle-check"></i> Menghubungkan form ke layanan spreadsheet eksternal.</li>
-          </ul>
-        </div>
-
-        <aside class="detail-side">
-          <h3>Tech Stack</h3>
-          <div class="skills">
-            <span>HTML</span><span>CSS</span><span>JS</span>
+        <div class="card-stack">
+          <h3 class="card-stack-title">What Drives Me</h3>
+          <div class="drive-card">
+            <i class="fa-solid fa-code"></i>
+            <div>
+              <h4>Languages</h4>
+              <p>HTML, CSS, JavaScript, Java, C, PHP</p>
+            </div>
           </div>
-          <div class="detail-unavailable">Live demo belum tersedia</div>
-        </aside>
-      </div>
-
-      <div class="detail-nav">
-        <div class="btn-row">
-          <a href="project-detail.html?id=absensi" class="btn btn-outline detail-nav-link">
-            <i class="fa-solid fa-arrow-left"></i> Website Absensi
-          </a>
-          <a href="project-detail.html?id=portalujian" class="btn btn-outline detail-nav-link">
-            Website Portal Ujian <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </div>
-      </div>
-    </article>
-
-    <!-- ============================================================
-         PRJ.08 — Exam Portal Ujian
-         ============================================================ -->
-    <article class="project-detail-block" id="detail-portalujian">
-      <div class="detail-hero">
-        <a href="projects.html" class="breadcrumb"><i class="fa-solid fa-arrow-left"></i> Back to all projects</a>
-        <h1>Website Portal Ujian</h1>
-        <p class="detail-summary">Platform online untuk mengelola ujian dan hasil evaluasi.</p>
-      </div>
-
-      <div class="detail-gallery">
-        <div class="detail-gallery-item"><img src="images/portalujian.jpg" alt="Website Portal Ujian - tampilan 1" data-lightbox></div>
-        <div class="detail-gallery-item"><img src="images/portalujian-2.jpg" alt="Website Portal Ujian - tampilan 2" data-lightbox></div>
-        <div class="detail-gallery-item"><img src="images/portalujian-3.jpg" alt="Website Portal Ujian - tampilan 3" data-lightbox></div>
-      </div>
-
-      <div class="detail-body">
-        <div class="detail-main">
-          <h2>Overview</h2>
-          <p>Platform online untuk mengelola ujian dan hasil evaluasi.</p>
-
-          <h2>My Role</h2>
-          <p>Fullstack developer - validasi form dan integrasi data.</p>
-
-          <h2>Challenges</h2>
-          <ul class="detail-list">
-            <li><i class="fa-solid fa-circle-check"></i> Validasi input di sisi klien sebelum data dikirim.</li>
-            <li><i class="fa-solid fa-circle-check"></i> Menghubungkan form ke layanan spreadsheet eksternal.</li>
-          </ul>
-        </div>
-
-        <aside class="detail-side">
-          <h3>Tech Stack</h3>
-          <div class="skills">
-            <span>HTML</span><span>CSS</span><span>JS</span><span>Python</span>
+          <div class="drive-card">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div>
+              <h4>Education</h4>
+              <p>Sistem Informasi, Universitas Singaperbangsa Karawang</p>
+            </div>
           </div>
-          <div class="detail-unavailable">Live demo belum tersedia</div>
-        </aside>
-      </div>
-
-      <div class="detail-nav">
-        <div class="btn-row">
-          <a href="project-detail.html?id=absensi" class="btn btn-outline detail-nav-link">
-            <i class="fa-solid fa-arrow-left"></i> Website Absensi
-          </a>
-          <a href="project-detail.html?id=ecommerce" class="btn btn-outline detail-nav-link">
-            Website E-Commerce <i class="fa-solid fa-arrow-right"></i>
-          </a>
+          <div class="drive-card">
+            <i class="fa-solid fa-folder-open"></i>
+            <div>
+              <h4>Projects</h4>
+              <p>7+ proyek solo maupun tim, web & desain produk</p>
+            </div>
+          </div>
         </div>
       </div>
-    </article>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- PROJECTS SUMMARY (clickable card leading to full Projects page) -->
+    <section class="project" id="project">
+      <div class="section-head reveal center">
+        <p class="eyebrow-label">Projects</p>
+        <h2>Featured Work</h2>
+        <p class="section-sub">Sebagian dari proyek yang pernah saya kerjakan.</p>
+      </div>
+
+      <div class="projects-carousel reveal">
+        <div class="projects-carousel-track">
+
+          <a href="project-detail.html?id=ecommerce" class="carousel-card">
+            <img src="images/ecommerceweb.jpg" alt="Website E-Commerce">
+            <span class="carousel-card-label">Website E-Commerce</span>
+          </a>
+          <a href="project-detail.html?id=portfolio" class="carousel-card">
+            <img src="images/webportfolio.jpg" alt="Website Portofolio">
+            <span class="carousel-card-label">Website Portofolio</span>
+          </a>
+          <a href="project-detail.html?id=workprogram" class="carousel-card">
+            <img src="images/webaas.jpg" alt="Website Program Kerja Organisasi">
+            <span class="carousel-card-label">Program Kerja Organisasi</span>
+          </a>
+          <a href="project-detail.html?id=agrisure" class="carousel-card">
+            <img src="images/agrisure.jpg" alt="Prototype Agrisure">
+            <span class="carousel-card-label">Prototype Agrisure</span>
+          </a>
+          <a href="project-detail.html?id=keepzone" class="carousel-card">
+            <img src="images/keepzone.jpg" alt="Keep Zone Business">
+            <span class="carousel-card-label">Keep Zone Business</span>
+          </a>
+          <a href="project-detail.html?id=absensi" class="carousel-card">
+            <img src="images/absensiweb.jpg" alt="Website Absensi">
+            <span class="carousel-card-label">Website Absensi</span>
+          </a>
+          <a href="project-detail.html?id=registration" class="carousel-card">
+            <img src="images/regis.jpg" alt="Website Form Registrasi">
+            <span class="carousel-card-label">Form Registrasi</span>
+          </a>
+
+          <!-- Duplicate set for seamless infinite loop -->
+          <a href="project-detail.html?id=ecommerce" class="carousel-card" aria-hidden="true">
+            <img src="images/ecommerceweb.jpg" alt="">
+            <span class="carousel-card-label">Website E-Commerce</span>
+          </a>
+          <a href="project-detail.html?id=portfolio" class="carousel-card" aria-hidden="true">
+            <img src="images/webportfolio.jpg" alt="">
+            <span class="carousel-card-label">Website Portofolio</span>
+          </a>
+          <a href="project-detail.html?id=workprogram" class="carousel-card" aria-hidden="true">
+            <img src="images/webaas.jpg" alt="">
+            <span class="carousel-card-label">Program Kerja Organisasi</span>
+          </a>
+          <a href="project-detail.html?id=agrisure" class="carousel-card" aria-hidden="true">
+            <img src="images/agrisure.jpg" alt="">
+            <span class="carousel-card-label">Prototype Agrisure</span>
+          </a>
+          <a href="project-detail.html?id=keepzone" class="carousel-card" aria-hidden="true">
+            <img src="images/keepzone.jpg" alt="">
+            <span class="carousel-card-label">Keep Zone Business</span>
+          </a>
+          <a href="project-detail.html?id=absensi" class="carousel-card" aria-hidden="true">
+            <img src="images/absensiweb.jpg" alt="">
+            <span class="carousel-card-label">Website Absensi</span>
+          </a>
+          <a href="project-detail.html?id=registration" class="carousel-card" aria-hidden="true">
+            <img src="images/regis.jpg" alt="">
+            <span class="carousel-card-label">Form Registrasi</span>
+          </a>
+
+        </div>
+      </div>
+
+      <a href="projects.html" class="section-more center-link">
+        Lihat semua proyek <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- EXPERIENCE SUMMARY -->
+    <section class="services" id="experience">
+      <div class="section-head reveal center">
+        <p class="eyebrow-label">Experience</p>
+        <h2>My Journey</h2>
+        <p class="section-sub">Combination of web development, design, education, and trading.</p>
+      </div>
+
+      <div class="services-container reveal">
+        <div class="service-card">
+          <i class="fa-solid fa-briefcase service-icon"></i>
+          <h3>Frontend Developer </h3>
+          <p>Freelancer · 2023 — Sekarang</p>
+          <div class="progress-block" style="margin-top:16px;">
+            <div class="progress-label">
+              <span>Penguasaan pengembangan frontend</span>
+              <strong>80%</strong>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-value="80"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <i class="fa-solid fa-briefcase service-icon"></i>
+          <h3>Mahasiswa Sistem Informasi</h3>
+          <p>Universitas Singaperbangsa Karawang · 2024 — Sekarang</p>
+          <div class="progress-block" style="margin-top:16px;">
+            <div class="progress-label">
+              <span>Progres studi (semester 4 dari 8)</span>
+              <strong>70%</strong>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-value="70"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <i class="fa-solid fa-briefcase service-icon"></i>
+          <h3>Trader</h3>
+          <p>Personal · 2022 — Sekarang</p>
+          <div class="progress-block" style="margin-top:16px;">
+            <div class="progress-label">
+              <span>Disiplin & manajemen risiko</span>
+              <strong>65%</strong>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-fill" data-value="65"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="experience.html" class="section-more center-link">
+        Lihat semua pengalaman <i class="fa-solid fa-arrow-right"></i>
+      </a>
+    </section>
+
+    <div class="section-divider"></div>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <div class="section-head reveal center">
+        <p class="eyebrow-label">Get in Touch</p>
+        <h2>Let's Connect</h2>
+      </div>
+
+      <div class="contact-content reveal">
+        <div class="contact-info">
+          <p>Saya selalu terbuka untuk mendiskusikan proyek baru dan peluang kolaborasi.</p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:farajmuafaa@gmail.com" class="contact-item-link">farajmuafaa@gmail.com</a>
+            </div>
+            <div class="contact-item">
+              <i class="fa-brands fa-whatsapp"></i>
+              <a href="https://wa.me/6289643334333" target="_blank" rel="noopener" class="contact-item-link">+62 896 4333 4333</a>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Bekasi, West Java, Indonesia</span>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="social-link" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" class="social-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://wa.me/6289643334333" class="social-link" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+
+        <!--
+          CARA HUBUNGKAN KE EMAIL (Formspree):
+          1. Daftar gratis di https://formspree.io
+          2. Buat form baru, copy endpoint URL yang diberikan
+             (bentuknya: https://formspree.io/f/xxxxxxxx)
+          3. Ganti "GANTI_DENGAN_ENDPOINT_FORMSPREE_KAMU" di baris action
+             di bawah ini dengan URL tersebut
+          4. Selesai — form akan mengirim email asli ke inbox kamu
+        -->
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/xwvdwjqo" method="POST">
+          <div class="form-group">
+            <label for="user_name">Nama Kamu</label>
+            <input type="text" id="user_name" name="name" required placeholder="contoh: Faraj Muafa">
+          </div>
+          <div class="form-group">
+            <label for="user_email">Email Kamu</label>
+            <input type="email" id="user_email" name="email" required placeholder="contoh: kamu@example.com">
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" name="message" rows="5" placeholder="Ceritakan tentang proyekmu" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-send">
+            Kirim Pesan <i class="fa-solid fa-paper-plane"></i>
+          </button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
 
   </main>
-
-  <!-- Lightbox for enlarging gallery photos -->
-  <div class="gallery-lightbox" id="galleryLightbox">
-    <button class="gallery-lightbox-close" id="galleryLightboxClose" aria-label="Tutup"><i class="fa-solid fa-xmark"></i></button>
-    <img src="" alt="" id="galleryLightboxImg">
-  </div>
 
   <footer class="footer">
     <div class="footer-container">
       <a href="index.html" class="footer-logo name-mark">Faraj Muafa</a>
       <ul class="footer-links">
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#home">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="projects.html">Projects</a></li>
         <li><a href="experience.html">Experience</a></li>
@@ -477,7 +410,5 @@
   <button id="back-to-top" aria-label="Kembali ke atas"><i class="fa-solid fa-chevron-up"></i></button>
 
   <script src="js/main.js"></script>
-  <script src="js/project-detail-toggle.js"></script>
-  <script src="js/gallery-lightbox.js"></script>
 </body>
 </html>
