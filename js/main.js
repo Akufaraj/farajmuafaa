@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------- Typing effect (home hero only) ---------- */
   const typingEl = document.getElementById('typing');
   if (typingEl) {
-    const words = ['Mature User Experience.', 'Clean Interface.', 'Responsive Website.'];
+    const words = ['antarmuka yang bersih.', 'website yang responsif.', 'pengalaman pengguna yang matang.'];
     let wordIndex = 0, charIndex = 0, isDeleting = false;
 
     function type() {
@@ -138,17 +138,64 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ---------- Contact form success/error modal ---------- */
+  const msgModalOverlay = document.getElementById('msgModalOverlay');
+  const msgModalIconSuccess = document.getElementById('msgModalIconSuccess');
+  const msgModalIconError = document.getElementById('msgModalIconError');
+  const msgModalTitle = document.getElementById('msgModalTitle');
+  const msgModalText = document.getElementById('msgModalText');
+  const msgModalClose = document.getElementById('msgModalClose');
+  const msgModalOkBtn = document.getElementById('msgModalOkBtn');
+
+  function openMsgModal({ type, title, text }) {
+    if (!msgModalOverlay) return;
+
+    msgModalIconSuccess.classList.toggle('is-active', type === 'success');
+    msgModalIconError.classList.toggle('is-active', type === 'error');
+
+    // Restart SVG draw animations every time the modal opens
+    [msgModalIconSuccess, msgModalIconError].forEach(icon => {
+      icon.querySelectorAll('circle, path').forEach(el => {
+        el.style.animation = 'none';
+        void el.offsetWidth; // force reflow to restart animation
+        el.style.animation = '';
+      });
+    });
+
+    msgModalTitle.textContent = title;
+    msgModalText.textContent = text;
+    msgModalOverlay.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeMsgModal() {
+    if (!msgModalOverlay) return;
+    msgModalOverlay.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  if (msgModalClose) msgModalClose.addEventListener('click', closeMsgModal);
+  if (msgModalOkBtn) msgModalOkBtn.addEventListener('click', closeMsgModal);
+  if (msgModalOverlay) {
+    msgModalOverlay.addEventListener('click', e => { if (e.target === msgModalOverlay) closeMsgModal(); });
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && msgModalOverlay && msgModalOverlay.classList.contains('open')) closeMsgModal();
+  });
+
   /* ---------- Contact form — submits to Formspree via fetch ---------- */
   const form = document.getElementById('contact-form');
-  const status = document.getElementById('formStatus');
-  if (form && status) {
+  if (form) {
     form.addEventListener('submit', async e => {
       e.preventDefault();
 
       const endpoint = form.getAttribute('action') || '';
       if (!endpoint || endpoint.includes('GANTI_DENGAN_ENDPOINT')) {
-        status.textContent = "Form belum terhubung ke email. Lihat komentar di index.html untuk cara setup Formspree.";
-        status.style.color = '#C77B4C';
+        openMsgModal({
+          type: 'error',
+          title: 'Belum Terhubung',
+          text: 'Form belum terhubung ke layanan email. Lihat komentar di index.html untuk cara setup Formspree.'
+        });
         return;
       }
 
@@ -165,16 +212,25 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (response.ok) {
-          status.textContent = "Terima kasih! Pesanmu berhasil terkirim, saya akan segera membalas.";
-          status.style.color = '';
+          openMsgModal({
+            type: 'success',
+            title: 'Pesan Terkirim!',
+            text: 'Terima kasih sudah menghubungi saya. Saya akan segera membalas pesanmu.'
+          });
           form.reset();
         } else {
-          status.textContent = "Maaf, ada masalah saat mengirim. Coba lagi atau hubungi lewat email/WhatsApp langsung.";
-          status.style.color = '#C77B4C';
+          openMsgModal({
+            type: 'error',
+            title: 'Gagal Terkirim',
+            text: 'Maaf, ada masalah saat mengirim pesan. Coba lagi atau hubungi lewat email/WhatsApp langsung.'
+          });
         }
       } catch (err) {
-        status.textContent = "Maaf, ada masalah koneksi. Coba lagi atau hubungi lewat email/WhatsApp langsung.";
-        status.style.color = '#C77B4C';
+        openMsgModal({
+          type: 'error',
+          title: 'Gagal Terkirim',
+          text: 'Maaf, ada masalah koneksi. Coba lagi atau hubungi lewat email/WhatsApp langsung.'
+        });
       } finally {
         submitBtn.disabled = false;
         submitBtn.innerHTML = originalLabel;
