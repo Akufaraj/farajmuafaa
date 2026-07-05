@@ -373,21 +373,46 @@
           </div>
           <div class="form-group">
             <label for="user_email">Email Kamu</label>
-            <input type="email" id="user_email" name="email" required placeholder="contoh: kamu@example.com">
+            <input type="email" id="user_email" name="email" required placeholder="contoh: kamu@gmail.com">
           </div>
           <div class="form-group">
             <label for="message">Pesan</label>
-            <textarea id="message" name="message" rows="5" placeholder="Ceritakan tentang proyekmu" required></textarea>
+            <textarea id="message" name="message" rows="3" required></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-send">
             Kirim Pesan <i class="fa-solid fa-paper-plane"></i>
           </button>
-          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
         </form>
       </div>
     </section>
 
   </main>
+
+  <!-- Contact form feedback modal -->
+  <div class="msg-modal-overlay" id="msgModalOverlay">
+    <div class="msg-modal" id="msgModal">
+      <button class="msg-modal-close" id="msgModalClose" aria-label="Tutup"><i class="fa-solid fa-xmark"></i></button>
+
+      <div class="msg-modal-icon msg-modal-icon-success" id="msgModalIconSuccess">
+        <svg viewBox="0 0 52 52" class="msg-check">
+          <circle class="msg-check-circle" cx="26" cy="26" r="24" fill="none"/>
+          <path class="msg-check-mark" fill="none" d="M14 27l7 7 16-16"/>
+        </svg>
+      </div>
+
+      <div class="msg-modal-icon msg-modal-icon-error" id="msgModalIconError">
+        <svg viewBox="0 0 52 52" class="msg-x">
+          <circle class="msg-x-circle" cx="26" cy="26" r="24" fill="none"/>
+          <path class="msg-x-mark" fill="none" d="M17 17l18 18M35 17l-18 18"/>
+        </svg>
+      </div>
+
+      <h3 id="msgModalTitle">Pesan Terkirim!</h3>
+      <p id="msgModalText">Terima kasih sudah menghubungi saya. Saya akan segera membalas pesanmu.</p>
+
+      <button type="button" class="btn btn-primary" id="msgModalOkBtn">Oke, Mengerti</button>
+    </div>
+  </div>
 
   <footer class="footer">
     <div class="footer-container">
