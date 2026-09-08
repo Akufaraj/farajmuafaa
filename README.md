@@ -2,7 +2,7 @@
 
 ### Mahasiswa Sistem Informasi | Web Development Enthusiast
 
-Saya adalah mahasiswa semester 4 program studi Sistem Informasi di Fakultas Ilmu Komputer, Universitas Singaperbangsa Karawang. Saya memiliki ketertarikan yang besar dalam pengembangan web, mulai dari merancang antarmuka pengguna yang modern hingga mengeksplorasi irisan antara teknologi web dan *Financial Technology* (FinTech).
+Saya adalah mahasiswa semester 5 program studi Sistem Informasi di Fakultas Ilmu Komputer, Universitas Singaperbangsa Karawang. Saya memiliki ketertarikan yang besar dalam pengembangan web, mulai dari merancang antarmuka pengguna yang modern hingga mengeksplorasi irisan antara teknologi web dan *Financial Technology* (FinTech).
 
 ---
 
