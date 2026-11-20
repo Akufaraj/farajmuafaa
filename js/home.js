@@ -19,10 +19,14 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!experienceGrid) return;
     const items = SITE_DATA.experience.slice(0, 3);
 
-    experienceGrid.innerHTML = items.map(e => `
+    const icons = ['fa-solid fa-laptop-code', 'fa-solid fa-graduation-cap', 'fa-solid fa-chart-line'];
+
+    experienceGrid.innerHTML = items.map((e, i) => `
       <div class="service-card">
-        <i class="fa-solid fa-briefcase service-icon"></i>
-        <h3>${e.title[lang]}</h3>
+        <div class="service-head">
+          <i class="${icons[i] || 'fa-solid fa-briefcase'} service-icon"></i>
+          <h3>${e.title[lang]}</h3>
+        </div>
         <p>${e.org[lang]} · ${e.period[lang]}</p>
         <div class="progress-block" style="margin-top:16px;">
           <div class="progress-label">

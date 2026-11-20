@@ -29,7 +29,7 @@
 
       <div class="header-actions">
         <button id="darkToggle" class="dark-toggle" aria-label="Ganti mode gelap">
-          <i class="fa-solid fa-moon"></i>
+          <span class="theme-icon" aria-hidden="true"></span>
         </button>
         <button id="menuToggle" class="menu-toggle" aria-label="Buka menu">
           <i class="fa-solid fa-bars"></i>
@@ -80,6 +80,7 @@
             </div>
             <pre><code><span class="tok-key">const</span> <span class="tok-fn">developer</span> = {
   <span class="tok-punc">name:</span> <span class="tok-str">"Faraj Muafa Dhamir"</span>,
+  <span class="tok-punc">Work:</span> <span class="tok-str">"Founder & Owner of Zenvora Digital"</span>,
   <span class="tok-punc">role:</span> <span class="tok-str">"Frontend Developer"</span>,
   <span class="tok-punc">study:</span> <span class="tok-str">"Sistem Informasi"</span>,
   <span class="tok-punc">semester:</span> <span class="tok-num">5</span>,
@@ -266,8 +267,10 @@
 
       <div class="services-container reveal">
         <div class="service-card">
-          <i class="fa-solid fa-briefcase service-icon"></i>
-          <h3>Frontend Developer </h3>
+          <div class="service-head">
+            <i class="fa-solid fa-laptop-code service-icon"></i>
+            <h3>Frontend Developer </h3>
+          </div>
           <p>Freelancer · 2023 — Sekarang</p>
           <div class="progress-block" style="margin-top:16px;">
             <div class="progress-label">
@@ -281,8 +284,10 @@
         </div>
 
         <div class="service-card">
-          <i class="fa-solid fa-briefcase service-icon"></i>
-          <h3>Mahasiswa Sistem Informasi</h3>
+          <div class="service-head">
+            <i class="fa-solid fa-graduation-cap service-icon"></i>
+            <h3>Mahasiswa Sistem Informasi</h3>
+          </div>
           <p>Universitas Singaperbangsa Karawang · 2024 — Sekarang</p>
           <div class="progress-block" style="margin-top:16px;">
             <div class="progress-label">
@@ -296,8 +301,10 @@
         </div>
 
         <div class="service-card">
-          <i class="fa-solid fa-briefcase service-icon"></i>
-          <h3>Trader</h3>
+          <div class="service-head">
+            <i class="fa-solid fa-chart-line service-icon"></i>
+            <h3>Trader</h3>
+          </div>
           <p>Personal · 2022 — Sekarang</p>
           <div class="progress-block" style="margin-top:16px;">
             <div class="progress-label">

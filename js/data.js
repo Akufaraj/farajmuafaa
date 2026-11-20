@@ -231,6 +231,40 @@ const SITE_DATA = {
         ]
       },
       gallery: ["images/regis.jpg"]
+    },
+    {
+      id: "zenvora",
+      index: "PRJ.08",
+      image: "images/zenvora-1.jpg",
+      skills: ["Website", "Mobile App", "UI/UX Design"],
+      demoUrl: "https://zenvoradigital.com",
+      repoUrl: "",
+      title: { id: "Zenvora", en: "Zenvora" },
+      summary: {
+        id: "Proyek digital yang diimplementasikan menjadi bisnis yang berjalan — website, aplikasi mobile, dan desain UI/UX.",
+        en: "A digital project implemented as a running business — website, mobile app, and UI/UX design."
+      },
+      overview: {
+        id: "Zenvora Digital adalah studio digital yang menyediakan website profesional, aplikasi mobile, dan layanan desain antarmuka untuk membantu bisnis berkembang di dunia digital. Proyek ini tidak berhenti sebagai desain atau prototipe — sudah diimplementasikan dan dijalankan sebagai bisnis yang berjalan.",
+        en: "Zenvora Digital is a digital studio offering professional websites, mobile apps, and interface design services to help businesses grow online. The project did not stop at design or prototyping — it was implemented and is running as a live business."
+      },
+      role: {
+        id: "Frontend developer — membangun tampilan website, memastikan pengalaman pengguna yang responsif, dan menyelaraskan implementasi dengan kebutuhan bisnis.",
+        en: "Frontend developer — built the website interface, ensured a responsive user experience, and aligned implementation with business needs."
+      },
+      challenges: {
+        id: [
+          "Menjaga konsistensi identitas visual di seluruh halaman.",
+          "Memastikan tampilan tetap nyaman di perangkat mobile.",
+          "Menerjemahkan kebutuhan bisnis menjadi implementasi teknis yang dapat digunakan langsung."
+        ],
+        en: [
+          "Maintaining consistent visual identity across all pages.",
+          "Keeping the experience comfortable on mobile devices.",
+          "Translating business needs into a directly usable technical implementation."
+        ]
+      },
+      gallery: ["images/zenvora-1.jpg", "images/zenvora-2.jpg", "images/zenvora-3.jpg"]
     }
   ],
 
