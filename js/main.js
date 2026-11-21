@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------- Typing effect (home hero only) ---------- */
   const typingEl = document.getElementById('typing');
   if (typingEl) {
-    const words = ['antarmuka yang bersih.', 'website yang responsif.', 'pengalaman pengguna yang matang.'];
+    const words = ['UI/UX Design.', 'Website Development.', 'Business Digital.'];
     let wordIndex = 0, charIndex = 0, isDeleting = false;
 
     function type() {
